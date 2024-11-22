@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="655.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageProductsController">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-padding: 10;">
+         <Label text="Search:" />
+         <TextField fx:id="searchField" prefWidth="300.0" promptText="Search products..." />
+      </HBox>
+
+      <TableView fx:id="productsTable" prefHeight="531.0" prefWidth="862.0">
+         <columns>
+            <TableColumn fx:id="productIdColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="productNameColumn" prefWidth="200.0" text="Product Name" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="200.0" text="Description" />
+            <TableColumn fx:id="quantityColumn" prefWidth="100.0" text="Quantity" />
+            <TableColumn fx:id="priceColumn" prefWidth="100.0" text="Price" />
+            <TableColumn fx:id="dateMadeColumn" prefWidth="125.0" text="Date Made" />
+         </columns>
+      </TableView>
+
+      <HBox alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+         <Button onAction="#handleAdd" text="Add" />
+         <Button onAction="#handleEdit" text="Edit" />
+         <Button onAction="#handleDelete" text="Delete" />
+         <Button onAction="#handleRefresh" text="Refresh" />
+      </HBox>
+   </children>
+</VBox>

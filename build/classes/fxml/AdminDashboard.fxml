@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardController" prefHeight="600.0" prefWidth="800.0">
+    <VBox spacing="15" alignment="CENTER" layoutX="200.0" layoutY="150.0">
+        <Button text="Manage Users" onAction="#handleManageUsers"/>
+        <Button text="Manage Orders" onAction="#handleManageOrders"/>
+        <Button text="Manage Materials" onAction="#handleManageMaterials"/>
+        <Button text="Manage Products" onAction="#handleManageProducts"/>
+        <Button text="Manage Storage" onAction="#handleManageStorage"/>
+    </VBox>
+</AnchorPane>
